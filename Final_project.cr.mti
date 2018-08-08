@@ -5,29 +5,12 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	ALU
 
-} {} {}} C:/Users/phamt21/Documents/Git/Final-project/Decoder.v {1 {vlog -work work -stats=none C:/Users/phamt21/Documents/Git/Final-project/Decoder.v
+} {} {}} C:/Users/phamt21/Documents/Git/Final-project/dataMemory.v {1 {vlog -work work -stats=none C:/Users/phamt21/Documents/Git/Final-project/dataMemory.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module Decoder
+-- Compiling module dataMemory
 
 Top level modules:
-	Decoder
-
-} {} {}} C:/Users/phamt21/Documents/Git/Final-project/PC.v {0 {vlog -work work -stats=none C:/Users/phamt21/Documents/Git/Final-project/PC.v
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module top
-** Error: (vlog-13069) C:/Users/phamt21/Documents/Git/Final-project/PC.v(9): near "assign": syntax error, unexpected assign, expecting ';' or ','.
-
--- Compiling module PC
-** Error: C:/Users/phamt21/Documents/Git/Final-project/PC.v(35): In, out, or inout does not appear in port list: mux_input.
-
-} {4.0 5.0 7.0 8.0} {}} C:/Users/phamt21/Documents/Git/Final-project/Operand_Prep.v {2 {vlog -work work -stats=none C:/Users/phamt21/Documents/Git/Final-project/Operand_Prep.v
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module Operand_Prep
-** Warning: C:/Users/phamt21/Documents/Git/Final-project/Operand_Prep.v(32): (vlog-2182) 'registersData' might be read before written in always_comb or always @* block.
-
-
-Top level modules:
-	Operand_Prep
+	dataMemory
 
 } {} {}} C:/Users/phamt21/Documents/Git/Final-project/top.v {0 {vlog -work work -stats=none C:/Users/phamt21/Documents/Git/Final-project/top.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -42,14 +25,11 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 ** Error: C:/Users/phamt21/Documents/Git/Final-project/top.v(44): (vlog-13205) Syntax error found in the scope following 'mux_input'. Is there a missing '::'?
 
 
-} {6.0 8.0 9.0 10.0 11.0 12.0} {}} C:/Users/phamt21/Documents/Git/Final-project/instruction_cache.v {0 {vlog -work work -stats=none C:/Users/phamt21/Documents/Git/Final-project/instruction_cache.v
+} {6.0 8.0 9.0 10.0 11.0 12.0} {}} C:/Users/phamt21/Documents/Git/Final-project/instruction_cache.v {1 {vlog -work work -stats=none C:/Users/phamt21/Documents/Git/Final-project/instruction_cache.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module Instruction_Cache
-** Error: (vlog-13069) C:/Users/phamt21/Documents/Git/Final-project/instruction_cache.v(10): near "[": syntax error, unexpected '['.
 
-** Error: (vlog-13069) C:/Users/phamt21/Documents/Git/Final-project/instruction_cache.v(15): near "(": syntax error, unexpected '('.
+Top level modules:
+	Instruction_Cache
 
-** Error: C:/Users/phamt21/Documents/Git/Final-project/instruction_cache.v(15): (vlog-13205) Syntax error found in the scope following 'Instruction_Cache'. Is there a missing '::'?
-
-
-} {4.0 5.0 6.0 7.0 8.0 9.0} {}}
+} {} {}}

@@ -6,7 +6,6 @@ input [63:0]PC;
 output reg [31:0] instruction;
 reg [31:0] instructionMem [6:0];
 initial begin
-	PC = 64'b0;
 	instructionMem[0] = 32'b1111_1000_0100_0000_0000_0010_1000_0001;
 	instructionMem[1] = 32'b1000_1011_0000_0001_0000_0000_0010_0010;
 	instructionMem[2] = 32'b1101_0001_0000_0000_0000_0011_0011_0011;

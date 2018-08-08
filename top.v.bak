@@ -49,7 +49,7 @@ ALU alu (.A(readdata_one),
  .B(readdata_two),
  .enable(ALUOp),
  .out(out),
- .zero(zero));
+ zero);
 
 
 reg [31:0]addr;

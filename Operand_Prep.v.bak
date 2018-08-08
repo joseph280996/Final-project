@@ -9,7 +9,6 @@ readData1,
 ALUSrc,
 muxOut,
 );
-input ALUSrc;
 input [9:5] readreg_one;
 input [20:16]readreg_two;
 input regWrite;

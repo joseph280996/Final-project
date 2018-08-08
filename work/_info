@@ -23,12 +23,12 @@ Z2 OP;L;10.4a;61
 r1
 !s85 0
 31
-Z3 !s108 1533756790.000000
+!s108 1533756790.000000
 !s107 C:/Users/phamt21/Documents/Git/Final-project/ALU.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/phamt21/Documents/Git/Final-project/ALU.v|
 !s101 -O0
 !i113 1
-Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
 n@a@l@u
 vdataMemory
 !s110 1533760862
@@ -50,16 +50,16 @@ r1
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/phamt21/Documents/Git/Final-project/dataMemory.v|
 !s101 -O0
 !i113 1
-R4
+R3
 ndata@memory
 vDecoder
-Z5 !s110 1533756791
+!s110 1533763096
 !i10b 1
-!s100 lXb<_8GdSlFgPgI;2Z`4@1
-IjzzC[UcWUaQKYA73L@i2K0
+!s100 WKCBnB;`;@8g=7Hh^3Z]Z2
+IFTd6=b:8hNe_AfGU`6b@53
 R0
 R1
-w1533730986
+w1533763000
 8C:/Users/phamt21/Documents/Git/Final-project/Decoder.v
 FC:/Users/phamt21/Documents/Git/Final-project/Decoder.v
 L0 1
@@ -67,21 +67,21 @@ R2
 r1
 !s85 0
 31
-R3
+!s108 1533763096.000000
 !s107 C:/Users/phamt21/Documents/Git/Final-project/Decoder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/phamt21/Documents/Git/Final-project/Decoder.v|
 !s101 -O0
 !i113 1
-R4
+R3
 n@decoder
 vInstruction_Cache
-!s110 1533761284
+!s110 1533761513
 !i10b 1
 !s100 Z1:RQhBmjOQ:3<5La<Ff@0
 I5EY9j^aIKH23;4D]zgBof3
 R0
 R1
-w1533761283
+w1533761337
 8C:/Users/phamt21/Documents/Git/Final-project/instruction_cache.v
 FC:/Users/phamt21/Documents/Git/Final-project/instruction_cache.v
 L0 1
@@ -89,21 +89,21 @@ R2
 r1
 !s85 0
 31
-!s108 1533761284.000000
+!s108 1533761513.000000
 !s107 C:/Users/phamt21/Documents/Git/Final-project/instruction_cache.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/phamt21/Documents/Git/Final-project/instruction_cache.v|
 !s101 -O0
 !i113 1
-R4
+R3
 n@instruction_@cache
 vOperand_Prep
-R5
+!s110 1533764386
 !i10b 1
-!s100 e?RA`InJ[o3aA6lRi?fJG0
-IXXYi5WVaoGM<chJ>1Whkl1
+!s100 ;oj5B>CM9Vn@JF]^eGBKF1
+I_hP@z3091ih5OeiXLeZ=_3
 R0
 R1
-w1533706342
+w1533764382
 8C:/Users/phamt21/Documents/Git/Final-project/Operand_Prep.v
 FC:/Users/phamt21/Documents/Git/Final-project/Operand_Prep.v
 L0 1
@@ -111,10 +111,32 @@ R2
 r1
 !s85 0
 31
-!s108 1533756791.000000
+!s108 1533764386.000000
 !s107 C:/Users/phamt21/Documents/Git/Final-project/Operand_Prep.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/phamt21/Documents/Git/Final-project/Operand_Prep.v|
 !s101 -O0
 !i113 1
-R4
+R3
 n@operand_@prep
+vPC
+!s110 1533764408
+!i10b 1
+!s100 cW;E5]6iZjk?e5:bm]3kX1
+ILmzYmTLBhm1JB6E:7IG_m1
+R0
+R1
+w1533763158
+8C:/Users/phamt21/Documents/Git/Final-project/PC.v
+FC:/Users/phamt21/Documents/Git/Final-project/PC.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1533764408.000000
+!s107 C:/Users/phamt21/Documents/Git/Final-project/PC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/phamt21/Documents/Git/Final-project/PC.v|
+!s101 -O0
+!i113 1
+R3
+n@p@c

@@ -4,10 +4,11 @@ enable,	// (reg2logc,uncondbranch,branch?)
 extensionOut,
 ALUOp,
 r_one,
-writeReg,
 readReg2,
+r_two
 );
 input [31:0] instruction;
+reg [4:0] immediate;
 reg [11:0] control;
 output reg [4:0] r_one, readReg2; //registers
 output reg [4:0] writeReg;
@@ -18,7 +19,12 @@ initial begin
 	assign control = instruction [31:21];
 	assign r_one = instruction [9:5];
 	assign extensionOut = instruction;
-	assign writeReg = instruction [4:0];
+	if (enable[0]) begin
+		readReg2 = writeReg;
+end	
+else begin
+	readReg2 = immediate;
+end
 end
 always @(*)begin
 	case (control)
@@ -87,12 +93,6 @@ always @(*)begin
 		ALUOp = 4'b1001;
 		end
 	endcase
-	if (enable[0]) begin
-		readReg2 = writeReg;
-		end	
-	else begin
-		readReg2 = instruction [20:16];
-	end
 end
 endmodule
 
