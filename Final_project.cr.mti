@@ -1,0 +1,44 @@
+C:/Users/phamt21/Documents/Git/Final-project/Decoder.v {1 {vlog -work work -stats=none C:/Users/phamt21/Documents/Git/Final-project/Decoder.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Decoder
+
+Top level modules:
+	Decoder
+
+} {} {}} C:/Users/phamt21/Documents/Git/Final-project/ALU.v {1 {vlog -work work -stats=none C:/Users/phamt21/Documents/Git/Final-project/ALU.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} C:/Users/phamt21/Documents/Git/Final-project/dataMemory.v {1 {vlog -work work -stats=none C:/Users/phamt21/Documents/Git/Final-project/dataMemory.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module dataMemory
+
+Top level modules:
+	dataMemory
+
+} {} {}} C:/Users/phamt21/Documents/Git/Final-project/top.v {0 {vlog -work work -stats=none C:/Users/phamt21/Documents/Git/Final-project/top.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module top
+** Error (suppressible): C:/Users/phamt21/Documents/Git/Final-project/top.v(16): (vlog-2388) 'instruction' already declared in this scope (top).
+
+** Error: C:/Users/phamt21/Documents/Git/Final-project/top.v(23): 'decoder' already declared in this scope.
+** Error: (vlog-13069) C:/Users/phamt21/Documents/Git/Final-project/top.v(35): near "zero": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+
+** Error: (vlog-13069) C:/Users/phamt21/Documents/Git/Final-project/top.v(44): near "=": syntax error, unexpected '='.
+
+** Error: C:/Users/phamt21/Documents/Git/Final-project/top.v(44): (vlog-13205) Syntax error found in the scope following 'mux_input'. Is there a missing '::'?
+
+
+} {6.0 8.0 9.0 10.0 11.0 12.0} {}} C:/Users/phamt21/Documents/Git/Final-project/Operand_Prep.v {2 {vlog -work work -stats=none C:/Users/phamt21/Documents/Git/Final-project/Operand_Prep.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Operand_Prep
+** Warning: C:/Users/phamt21/Documents/Git/Final-project/Operand_Prep.v(32): (vlog-2182) 'registersData' might be read before written in always_comb or always @* block.
+
+
+Top level modules:
+	Operand_Prep
+
+} {} {}}
