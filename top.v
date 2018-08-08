@@ -6,6 +6,7 @@ reg [31:0]instruction, alu_input, adder_input; // pc input
 reg [1:0] mux_input;
 wire[31:0]adder_output, alu_output;
 wire[1:0] mux_output;
+PC m(adder_input, adder_output, alu_output, alu_input, instruction, mux_output, mux_input);
 
 
 
@@ -57,30 +58,5 @@ reg [31:0]inputData;
 reg WriteData, ReadData;
 wire [31:0]Data;
 wire MissFlag;
-
-mux_input = 2'b00;		
-		assign mux_input = mux_output;
-		assign alu_input = alu_output;		
-		assign adder_input = adder_output;
-		instruction = 32'b1111_1000_0100_0000_0000_0010_1000_0001;
-		alu_input <= instruction;
-		adder_input <= instruction;
-end
-
-	initial begin
-		$monitor("Instruction value: %b, alu_output: %b, adder_output: %b, mux_out %b", instruction, alu_output, adder_output, mux_output);
-		end
-endmodule
-
-
-
-Module Instruction_Cache (ReadAddress, decoder);
-
-initial begin
-assign ReadAddress = decoder;
-ReadAddress = c[0];
-
-	$monitor("Decoder value: %b", Decoder)
-end 
-endmodule
+dataMemory dCache(Data, MissFlag, addr, inputData, WriteData, ReadData);
 
